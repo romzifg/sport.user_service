@@ -10,6 +10,7 @@ type User struct {
 	ID          uint      `gorm:"primaryKey;autoincrement"`
 	UUID        uuid.UUID `gorm:"type:uuid;not null"`
 	Name        string    `gorm:"type:varchar(100);not null"`
+	Username    string    `gorm:"type:varchar(20);not null"`
 	Password    string    `gorm:"type:varchar(255);not null"`
 	Email       string    `gorm:"type:varchar(100);not null"`
 	PhoneNumber string    `gorm:"type:varchar(15)"`
